@@ -1,0 +1,46 @@
+html{
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+}
+
+#container{
+    margin: auto;
+    width: 900px;
+    height: 600px;
+    background-color: #ff6215;
+    border: 1px solid #873612;
+}
+
+#header{
+    float: left;
+    width: 900px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 2px solid darkred;
+}
+#sidecon{
+    float:left;
+    width: 200px;
+    height: 500px;
+    text-align: center;
+    border-bottom: 2px solid darkred;
+    border-right: 2px solid darkred;
+}
+#textcon{
+    float:left;
+    width: 698px;
+    height: 500px;
+    text-align: center;
+    border-bottom: 2px solid darkred;
+}
+#footer{
+    float:left;
+    width: 900px;
+    height: 50px;
+    font-size: 10px;
+    line-height: 50px;
+    text-align: center;
+    opacity: 25;
+}
