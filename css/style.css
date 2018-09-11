@@ -20,7 +20,7 @@ html{
     text-align: center;
     border-bottom: 2px solid darkred;
 }
-#sidecon{
+#side{
     float:left;
     width: 200px;
     height: 500px;
@@ -28,7 +28,7 @@ html{
     border-bottom: 2px solid darkred;
     border-right: 2px solid darkred;
 }
-#textcon{
+#text{
     float:left;
     width: 698px;
     height: 500px;
