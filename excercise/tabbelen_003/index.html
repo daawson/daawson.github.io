@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tabbelen 0003</title>
+        <script>
+            function switchOpd(i) {
+                var x;
+                if(i === 0) {
+                    x = document.getElementById("Table0");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+                if(i === 1) {
+                    x = document.getElementById("Table1");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+                if(i === 2) {
+                    x = document.getElementById("Table2");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+                if(i === 3) {
+                    x = document.getElementById("Table3");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+            }
+        </script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <button onclick="switchOpd(0)">Show/Hide Table 0</button>
+        <div id="Table0">
+            <table border="1" style="text-align: center">
+                <tr>
+                    <td rowspan="2"></td>
+                    <td colspan="2">Average</td>
+                    <td rowspan="2">Other<br>Category</td>
+                </tr>
+                <tr>
+                    <td>Height</td>
+                    <td>Weight</td>
+                </tr>
+                <tr>
+                    <td>Males</td>
+                    <td>1.9</td>
+                    <td>0.003</td>
+                    <td>yyy</td>
+                </tr>
+                <tr>
+                    <td>Females</td>
+                    <td>1.7</td>
+                    <td>0.002</td>
+                    <td>xxx</td>
+                </tr>
+            </table>
+        </div>
+        <br><button onclick="switchOpd(1)">Show/Hide Table 4</button>
+        <div id="Table1">
+            <table border="1">
+                <tr>
+                    <td colspan="4" rowspan="2">Address 1</td>
+                    <td colspan="2" >Date</td>
+                    <td colspan="2" >Place</td>
+                </tr>
+                <tr>
+                    <td colspan="4" rowspan="4" >References</td>
+                <tr>
+                    <td colspan="4" rowspan="2" >Address 2</td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td colspan="4" rowspan="2" >Address 3</td>
+                </tr>
+                <tr>
+                    <td colspan="4" >Destination</td>
+                </tr>
+                <tr>
+                    <td >Sl no</td>
+                    <td >Qty   </td>
+                    <td colspan="3">Product</td>
+                    <td >unit s</td>
+                    <td >rate</td>
+                    <td >total</td>
+                </tr>
+                <tr>
+                    <td rowspan="4"> <br><br><br> </td>
+                    <td rowspan="4"> <br><br><br> </td>
+                    <td rowspan="4" colspan="3"> <br><br><br> </td>
+                    <td rowspan="4"> <br><br><br> </td>
+                    <td rowspan="4"> <br><br><br> </td>
+                    <td rowspan="4"> <br><br><br> </td>
+                </tr>
+            </table>
+        </div>
+        <br><button onclick="switchOpd(2)">Show/Hide Table 5</button>
+        <div id="Table2">
+            <table border="1">
+                <tr>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                </tr>
+                <tr>
+                    <td rowspan="4">You can span<br>down</td>
+                    <td colspan="3">You can span across</td>
+                </tr>
+                <tr>
+                    <td colspan="2">It;s like a puzzle.</td>
+                    <td rowspan="3">Over<br>here.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">This<br>way.</td>
+                    <td>That way.</td>
+                </tr>
+                <tr>
+                    <td>Where am<br>I?</td>
+                </tr>
+            </table>
+        </div>
+        <br><button onclick="switchOpd(3)">Show/Hide Table 11</button>
+        <div id="Table3">
+            <table border="1">
+                <tr>
+                    <td colspan="4" rowspan="12">Venkateshwara<br>Enterprises<br> Shed No. D-30, Industrial Estete,<br>B.H Road, Tumkur - 572 103, Karnataka<br>Mob: 94803 77407, 98440 91647<br>TIN:29690400291</td>
+                    <td colspan="4" rowspan="2">INVOICE<br>Rule[..] of the Central Excise Rules 1984</td>
+                    <td rowspan="2"> BOOK COPY</td>
+                    <td colspan="4" rowspan="2">Date: </td>
+                    <td rowspan="2">SI. No. 057</td>
+                </tr><tr></tr>
+                <tr>
+                    <td colspan="5" rowspan="6">Name and Addres of the Consignee<br>[..]</td>
+                    <td colspan="4">Date & Time of Issue</td>
+                    <td>9-2-15</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Date & Time of Removal</td>
+                    <td>9-2-15</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Tariff Heading No.</td>
+                    <td>-----------</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Exemption Notification</td>
+                    <td>-----------</td>
+                </tr>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td colspan="5" rowspan="2">Your order No. 123<br>Order date: 123</td>
+                    <td colspan="4" rowspan="2">SI. No debit entry.. [..]</td>
+                    <td colspan="2">---------</td>
+                </tr>
+
+            </table>
+        </div>
+
+    <br>
+    <a href="../../index.html">Homepage!</a>
+    </body>
+</html>
