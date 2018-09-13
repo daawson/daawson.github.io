@@ -73,3 +73,11 @@ nav a:hover{
     margin-left: 5px;
     margin-top: 5px;
 }
+
+.cr{
+    float:left;
+    width: 1080px;
+    height: 25px;
+    font-size: 9px;
+    text-decoration: none;
+}
