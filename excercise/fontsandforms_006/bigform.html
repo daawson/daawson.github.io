@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burton Ed. Formulier</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body style="margin: 0 auto; width: 960px; font-family: 'Montserrat', sans-serif;">
+    <form action="http://www.savatarian.com/html5/form.php/" target="_blank" method="POST">
+        <fieldset>
+            <legend>Burton Ed. Formulier</legend>
+            <div style="float: left; width: 450px;">
+                <table>
+                    <tr>
+                        <td><label for="fname">Voornaam</label></td>
+                        <td><input type="text" id="fname" name="voornaam"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tname">Tussenvoegsel</label></td>
+                        <td><input type="text" id="tname" name="tussenvoegsel"/></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="aname">Achternaam</label></td>
+                        <td><input type="text" id="aname" name="achternaam"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gfield">Geslacht</label></td>
+                        <td><input type="radio" id="gfield" name="geslacht"/>Man
+                        <input type="radio" id="gfield" name="geslacht"/>Vrouw</td>
+                    </tr>
+                    <tr>
+                        <td><label for="ogen">Kleur Ogen</label></td>
+                        <td><select name="kleur-ogen" id="ogen">
+                            <option>Groen</option>
+                            <option>Blauw</option>
+                            <option>Bruin</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="bdate">Geborte datuum</label></td>
+                        <td><input type="date" id="bdate" name="gebortedatuum"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="oms">Omschrijving</label></td>
+                        <td><textarea name="omschrijving" id="oms"></textarea></td>
+                    </tr>
+                </table>
+            </div>
+            <div style="float: left; width: 480px;">
+                    <table>
+                        <tr>
+                            <td><label for="lekker-eten">Lekker Eten: </label></td>
+                            <td><input type="checkbox" id="lekker-eten" name="lekker-eten" value="patat">
+                            <span class="checkbox">Pataat</span></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" id="lekker-eten" name="lekker-eten" value="bruinebonen">
+                            <span class="checkbox">Bruinebonen</span></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" id="lekker-eten" name="lekker-eten" value="linzen">
+                            <span class="checkbox">Linzen</span></td>
+                        </tr>
+                    </table>
+            </div>
+            <div style="width: 960px; float: left; margin-top: 15px; text-align: center;">
+                <input type="button" value="Annuleer" name="knop" style="margin-left: 250px;">
+                <input type="submit" value="OK" name="knop">
+            </div>
+        </fieldset>
+    </form>
+    <a href="../../excercise/burtoneducation_005/index.html">Burton Ed. Homepage!</a>
+</body>
+</html>
