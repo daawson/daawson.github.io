@@ -1,10 +1,15 @@
 html{
     font-family: 'Montserrat', sans-serif;
-}
 
+}
+h3{
+    text-align: left;
+    margin-left: 10px;
+    color: #d64a29;
+}
 body{
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
     background-color: lightskyblue;
 }
 
@@ -24,6 +29,7 @@ nav{
     width: 100%;
     height: auto;
     background-color: gray;
+    display: flex;
 }
 
 nav a {
@@ -34,6 +40,7 @@ nav a {
     color: white;
     height: 50px;
     line-height: 50px;
+    flex-grow: 1;
 }
 main{
     float:left;
@@ -45,16 +52,42 @@ main{
 footer{
     float:left;
     width: 100%;
-    height: auto;
+    height: 3em;
     background-color: darkcyan;
-}
-article{
-    float:left;
     text-align: center;
-    font-size: 16px;
-    width: 50%;
+    color: darkblue;
+    line-height: 3em;
+    font-size: 0.8em;
 }
-@media all and (max-width: 768px){
+
+.articleimg{
+    max-width:95%;
+    max-height:95%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+article {
+    float: left;
+    margin: 0 auto;
+    width: 32%;
+}
+
+article p{
+    font-size: 0.9em;
+    width: 90%;
+    margin-left: 10px;
+}
+@media all and (max-width: 1000px){
+    article {
+        float: left;
+        margin: 0 auto;
+        width: 49%;
+    }
+}
+@media all and (max-width: 799px){
     body{
         margin: 0 auto;
         width: 100%;
@@ -64,9 +97,25 @@ article{
     }
     nav{
         height: auto;
+        display: initial;
+    }
+
+    footer{
+        height: auto;
     }
     article{
         width: 100%;
+        height: auto;
+        text-align: center;
+        border-bottom: 1px solid pink;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+    }
+    article p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: left;
     }
     nav a{
         border-bottom: 1px solid lightgray;
@@ -75,10 +124,13 @@ article{
         height: 25px;
         line-height: 25px;
         margin-left: 0;
+        flex-grow: initial;
     }
+
     .articleimg{
-        width: 75%;
+        margin: 0 auto;
     }
+
     .logo{
         float:left;
         width: 100%;
