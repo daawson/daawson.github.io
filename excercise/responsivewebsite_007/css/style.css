@@ -78,13 +78,14 @@ article {
 article p{
     font-size: 0.9em;
     width: 90%;
-    margin-left: 10px;
+    margin-left: 11px;
 }
 @media all and (max-width: 1000px){
     article {
         float: left;
         margin: 0 auto;
-        width: 49%;
+        width: 45%;
+        height: 720px;
     }
 }
 @media all and (max-width: 799px){
