@@ -136,6 +136,30 @@ footer .col h1{
     border-radius: 10px 10px;
 }
 
+.header_concert {
+    background: url("img/header_concertbg.jpg");
+    border-radius: 10px 10px;
+}
+
+.header_sport {
+    background: url("img/header_sportbg.jpg") 25%;
+    border-radius: 10px 10px;
+}
+
+.header_recepten {
+    background: url("img/header_receptenbg.jpg");
+    background-size: 25%;
+    border-radius: 10px 10px;
+}
+.header_about {
+    background: url("img/header_aboutbg.jpg");
+    border-radius: 10px 10px;
+}
+.header_contact {
+    background: url("img/header_contactbg.jpg");
+    border-radius: 10px 10px;
+}
+
 
 /*
 * ---- minor section | home columns ------
@@ -269,8 +293,13 @@ main .news-col{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    widtH: 150%;
+    width: 150%;
  }
+.sport {
+    width: 90%;
+    border-radius: 100%;
+}
+
 
 /*------ CONTACT SECTION ---- */
 .contact-form{
