@@ -8,12 +8,12 @@ html{
 }
 
 body{
-    display: block;
     margin: 0 auto;
     border-bottom: 25px solid;
     border-radius: 10px 10px;
     width: 90%;
-    height: 860px;
+    position: relative;
+    min-height: 100%;
     background-color: #aebbc1;
 }
 
@@ -99,7 +99,8 @@ footer{
     border-top: 1px solid #2d3a4b;
     float:left;
     width: 100%;
-    height: 160px;
+    min-height: 160px;
+    bottom: 0;
     background-color: #626c75;
 }
 
@@ -200,6 +201,129 @@ main .news-col{
     width: fit-content;
     font-size: 0.6em;
     color: blue;
+}
+/* --- ABOUT SECTION ----- */
+
+#about-holder{
+    margin: 100px auto 25px;
+    float:left;
+    width: 100%;
+    height: 650px;
+}
+
+#myphoto{
+    margin: 25px auto;
+    width: 325px;
+    height: 325px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    background: #f5e144 url("img/myphoto.jpg");
+}
+
+#myphoto:hover{
+    border-radius: 0;
+}
+
+#desc p{
+    text-align: center;
+    font-size: medium;
+    width: 100%;
+    background-color: white;
+}
+
+/*------ CONCERTEN SPORTEN RECEPTEN ------*/
+.container-big{
+    margin: 10px auto;
+    width: 95%;
+    height: 550px;
+    text-align: center;
+}
+.concert-box{
+    display: inline-block;
+    text-align: center;
+    margin: 75px 25px 0 auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 35%;
+    overflow: hidden;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.concert-box:hover{
+    animation: hoverbox 0.5s ease;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes hoverbox{
+    to{
+        border-radius: 5%;
+    }
+
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    widtH: 150%;
+ }
+
+/*------ CONTACT SECTION ---- */
+.contact-form{
+    border: 1px solid rgba(174,187,193,0.44);
+    float:left;
+    width: 96%;
+    height: 500px;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.contact-form table{
+    float:left;
+    margin: 0 auto;
+    width: 50%;
+}
+.contact-form h3{
+    margin-left: 10px;
+}
+
+.contact-form table td{
+    width: 50px;
+    height: 25px;
+}
+
+.contact-form table tr{
+    width: 100px;
+    height: 25px;
+}
+.mapouter{
+    margin: 0 auto;
+    border: 5px solid white;
+    float:left;
+    text-align:right;
+    height:450px;
+    width:450px;
+}
+.gmap_canvas {
+     overflow:hidden;
+     background:none!important;
+     height:450px;
+     width:450px;
+ }
+
+@media all and (max-width: 731px) {
+    .contact-form {
+        border: 0;
+    }
+    .contact-form table{
+        margin-bottom: 10px;
+        margin-left: 10px;
+
+    }
 }
 
 /* ------ RESPONSIVE SECTION ------------ */
