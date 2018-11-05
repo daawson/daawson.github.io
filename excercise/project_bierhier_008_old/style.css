@@ -1,0 +1,499 @@
+/*
+* MAJOR SECTION
+*/
+html{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #2d3a4b;
+
+}
+
+body{
+    margin: 0 auto;
+    border-bottom: 25px solid;
+    border-radius: 10px 10px;
+    width: 90%;
+    position: relative;
+    min-height: 100%;
+    background-color: #aebbc1;
+}
+
+header{
+    float: left;
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid #2d3a4b;
+}
+
+nav{
+    display: block;
+    float:right;
+    width: 50%;
+    height: 100px;
+    text-align: center;
+}
+
+nav a{
+    float:left;
+    width: 16.65%;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 75px;
+    color: #2d3a4b;
+    background-color: #f5e144;
+    box-shadow: inset 0 10px orange;
+}
+
+nav a:first-child{
+    border-radius: 50px 0 0 50px;
+}
+nav a:last-child{
+    border-radius: 0 50px 50px 0;
+}
+#active{
+    background-color: #f5bf05;
+}
+
+nav a:hover{
+    box-shadow: inset 0 10px yellow;
+    color: black;
+}
+
+header #tt-top{
+    font-family: 'Oswald', sans-serif;
+    float:left;
+    width: 30%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 0 0 6px black;
+}
+
+#logo{
+    float:left;
+    width: 20%;
+    height: 100%;
+    background: url("img/bierhier_logo.png") no-repeat 50%;
+    background-size: 75%;
+    animation: rotateme 10s ease infinite;
+}
+@keyframes rotateme {
+    to{transform: rotate(360deg);}
+}
+main{
+    margin: 0;
+    padding: 0;
+    float:left;
+    width: 100%;
+    max-height: 960px;
+    height: fit-content;
+    background-color: #dfe7e9;
+}
+footer{
+    border-top: 1px solid #2d3a4b;
+    float:left;
+    width: 100%;
+    min-height: 160px;
+    bottom: 0;
+    background-color: #626c75;
+}
+
+footer .col{ /* 7 pages */
+    margin-left: 10px;
+    float:left;
+    width: 18%;
+    height: 160px;
+    border-right: 1px solid #454e57;
+}
+
+footer .col:last-child{
+    border-right: none;
+    text-align: center;
+
+}
+
+footer .col a{
+    float:left;
+    width: 90%;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+footer .col h1{
+    color: black;
+    font-size: 14px;
+}
+/* home header image */
+.header_home {
+    background: url("img/header_homebg.jpg");
+    border-radius: 10px 10px;
+}
+
+.header_concert {
+    background: url("img/header_concertbg.jpg");
+    border-radius: 10px 10px;
+}
+
+.header_sport {
+    background: url("img/header_sportbg.jpg") 25%;
+    border-radius: 10px 10px;
+}
+
+.header_recepten {
+    background: url("img/header_receptenbg.jpg");
+    background-size: 25%;
+    border-radius: 10px 10px;
+}
+.header_about {
+    background: url("img/header_aboutbg.jpg");
+    border-radius: 10px 10px;
+}
+.header_contact {
+    background: url("img/header_contactbg.jpg");
+    border-radius: 10px 10px;
+}
+
+
+/*
+* ---- minor section | home columns ------
+*/
+
+main .news-col{
+    float: left;
+    margin: 10px auto 10px 10px;
+    width: 32%;
+    height: 800px;
+    border: 1px solid #aebbc1;
+    text-align: left;
+}
+
+
+.news-col h3{
+    margin-left: 15px;
+}
+
+.news-col .news {
+    width: 90%;
+    margin: 15px auto 0 15px;
+    padding-bottom: 15px;
+    float: left;
+    border-bottom: 1px solid #aebbc1;
+
+}
+
+.news img{
+    border-radius: 5px;
+    float:left;
+    margin-right: 5px;
+    width: 33%;
+}
+
+.news-col .news:last-of-type{
+    border-bottom: 0;
+}
+.n-holder{
+    float:left;
+    width: 60%;
+}
+.n-holder p{
+    margin-left: 5px;
+    max-width: 90%;
+    font-size: 0.8em;
+}
+.n-holder a{
+    display: block;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #2d3a4b;
+    width: 100%;
+    font-size: 0.9em;
+}
+.site{
+    display: block;
+    margin-left: 5px;
+    width: fit-content;
+    font-size: 0.6em;
+    color: blue;
+}
+/* --- ABOUT SECTION ----- */
+
+#about-holder{
+    margin: 100px auto 25px;
+    float:left;
+    width: 100%;
+    height: 650px;
+}
+
+#myphoto{
+    margin: 25px auto;
+    width: 325px;
+    height: 325px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    background: #f5e144 url("img/myphoto.jpg");
+}
+
+#myphoto:hover{
+    border-radius: 0;
+}
+
+#desc p{
+    text-align: center;
+    font-size: medium;
+    width: 100%;
+    background-color: white;
+}
+
+/*------ CONCERTEN SPORTEN RECEPTEN ------*/
+.container-big{
+    margin: 10px auto;
+    width: 95%;
+    height: 550px;
+    text-align: center;
+}
+.concert-box{
+    display: inline-block;
+    text-align: center;
+    margin: 75px 25px 0 auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 35%;
+    overflow: hidden;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.concert-box:hover{
+    animation: hoverbox 0.5s ease;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes hoverbox{
+    to{
+        border-radius: 5%;
+    }
+
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150%;
+ }
+.sport {
+    width: 90%;
+    border-radius: 100%;
+}
+/*------ CONCERTEN SECTION ---- */
+#cholder{
+    width: 100%;
+    height: 600px;
+}
+
+#cheader{
+    float:left;
+    width: 100%;
+    height: 175px;
+    overflow: hidden;
+    border-radius: 0 0 25% 25%;
+}
+#cholder p h3{
+    text-align: left;
+}
+#cholder p{
+    float:left;
+    text-align: center;
+    width: 48%;
+    margin: 0 auto 0 10px;
+}
+.fitp{
+    object-fit: contain;
+    max-width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.emma{
+    background: url("img/emmablackery_header.jpg") 50% 30%;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+.kevin{
+    background: url("img/kevin_header.jpg") 50% 30%;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.groove{
+    background: url("img/groove_header.jpg") 50% 30%;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+@media all and (max-width: 731px) {
+    #cholder p{
+        width: 100%;
+    }
+}
+
+/*------ CONTACT SECTION ---- */
+.contact-form{
+    border: 1px solid rgba(174,187,193,0.44);
+    float:left;
+    width: 96%;
+    height: 500px;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.contact-form table{
+    float:left;
+    margin: 0 auto;
+    width: 50%;
+}
+.contact-form h3{
+    margin-left: 10px;
+}
+
+.contact-form table td{
+    width: 50px;
+    height: 25px;
+}
+
+.contact-form table tr{
+    width: 100px;
+    height: 25px;
+}
+.mapouter{
+    margin: 0 auto;
+    border: 5px solid white;
+    float:left;
+    text-align:right;
+    height:450px;
+    width:450px;
+}
+.gmap_canvas {
+     overflow:hidden;
+     background:none!important;
+     height:450px;
+     width:450px;
+ }
+
+@media all and (max-width: 731px) {
+    .contact-form {
+        border: 0;
+    }
+    .contact-form table{
+        margin-bottom: 10px;
+        margin-left: 10px;
+
+    }
+}
+
+/* ------ RESPONSIVE SECTION ------------ */
+@media all and (max-width: 1000px){
+    body{
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    nav a{
+        font-size: 0.8em;
+    }
+}
+@media all and (max-width: 950px){
+    body{width: 100%;}
+    main .news-col{
+        width: 48%;
+    }
+}
+@media all and (max-width: 731px) {
+    html{
+        background-color: #dfe7e9;
+    }
+    body{
+        width: 100%;
+    }
+
+    header{
+        float:left;
+        width: 100%;
+        height: 170px;
+    }
+
+    header #tt-top{
+        float:left;
+        width: 50%;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #logo{
+        float:left;
+        width: 50%;
+        max-height: 100px;
+        animation: stop;
+    }
+
+    nav {
+        float:left;
+        width: 100%;
+        height: 100px;
+    }
+
+    nav a{
+        text-align: center;
+        float: left;
+        width: 16.666666665%;
+        line-height: 60px;
+        font-size: 0.7em;
+    }
+    nav a:first-of-type{
+        border-radius: initial;
+    }
+
+    nav a:last-of-type{
+        border-radius: initial;
+    }
+    main
+    {
+        clear: both;
+        width: 100%;
+        height: auto;
+        margin: 0 auto 72%;
+    }
+
+
+    main .news-col{
+        margin: 0 auto 0 1px;
+        width: 99%;
+        height: auto;
+    }
+    footer{
+        clear: both;
+        float: left;
+        margin-top: 355px;
+        text-align: left;
+        width: 100%;
+        height: auto;
+    }
+
+    footer .col{
+        margin: 0 auto 0 5px;
+        border-right: none;
+        width: 90%;
+        max-height: 100%;
+    }
+}
