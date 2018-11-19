@@ -157,8 +157,78 @@ iframe{
 
 /*#region SPORT PAGES */
 
+.grid {
+    display: flex;                       /* establish flex container */
+    flex-wrap: wrap;                     /* enable flex items to wrap */
+    justify-content: space-around;
+    float:left;
+    width: 650px; !important;
+    height: 300px;!important;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.cell {
+    border-radius: 5px;
+    border: 1px dotted blue;
+    flex: 0 0 32%;                       /* don't grow, don't shrink, width */
+    height: 100px;
+    margin-bottom: 5px;
+}
+.cell:nth-child(1), .cell:nth-child(2), .cell:nth-child(3){
+    background: #6d4999 url("../project_bierhier_008_old/img/fb_sporten.jpg") 90% 90%;
+}
+.cell:nth-child(4),.cell:nth-child(5),.cell:nth-child(6)  {
+    background: #6d4999 url("img/volley_sporten.jpg") 50% 60%;
+}
+.cell:nth-child(7),.cell:nth-child(8),.cell:nth-child(9)  {
+    background: #6d4999 url("img/te_sporten.jpg") 90% 20%;
+}
 
 
+.row h2{
+    width: 40%;
+    float:left;
+    margin-left: 15px;
+    font-size: 12px;
+}
+.row p{
+    width: 40%;
+    float: left;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.cell a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.top{
+    margin: auto;
+    width: 90%;
+    height: 250px;;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.scale-sport{
+    width: 47%;
+    border-radius: 5px;
+}
+.bottom{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom .col{
+    width: 24%;
+    margin-left: 0;
+}
 /*#endregion*/
 
 /*#endregion CONTENT SECTION */
