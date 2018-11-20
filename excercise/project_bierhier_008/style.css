@@ -21,6 +21,7 @@ body{
 
 /*
     TODO: Beautification needed.
+    TODO: Code clean-up needed.
     TODO: Fill 'Lorem Ipsum' with content, replace placeholders.
     TODO: Make site responsive.
 
@@ -51,9 +52,7 @@ header.recepten{
     background-size: 110%;
 }
 nav{
-    position: relative;
     width: 100%;
-    min-height: 100%;
 }
 nav a{
     float: left;
@@ -76,12 +75,9 @@ nav h1{
     float: left;
     width: 50%;
     height: 100%;
-    font-size: 24px;
-    font-weight: bolder;
+    font-size: 28px;
     line-height: 55px;
     text-align: center;
-    vertical-align: center;
-    color: white;
 }
 /* #endregion HEADER SECTION */
 
@@ -95,10 +91,9 @@ main{
     width: 100%;
     flex: 1;
     background-color: #4b1437;
-    text-align: justify; /* no IdEa wOt iS dIs */
-    text-justify: distribute-all-lines; /* no IdEa wOt iS dIs */
+    text-align: justify; /* dis ting makes text fill the width of any other div */
+    text-justify: distribute-all-lines;
     font-family: 'Merriweather', sans-serif;
-    border-bottom: 1px solid gray;
 }
 
 main h1{
@@ -106,17 +101,14 @@ main h1{
     margin-left: 15px;
     width: 90%;
     float: left;
-    display: flex;;
-    flex-direction: row;
     height: 24px;
     line-height: 24px;
     font-size: 24px;
 }
-.clear { clear: both; } /* TOSTY */
 
 /*#endregion Main containers*/
 
-/*#region HOME PAGE and misc. */
+/*#region multi-use elements and misc. also HOME */
 .col{
     display: flex;
     flex-direction: column;
