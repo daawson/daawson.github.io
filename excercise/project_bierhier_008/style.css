@@ -2,10 +2,11 @@
 
 html{
     font-family: 'Quicksand', sans-serif;
-    background-color: #d8d6d6;
+    background-color: #000000;
     height: 100%;
     width: 100%;
     position: relative;
+    color: white;
 }
 
 body{
@@ -19,7 +20,6 @@ body{
 /*#endregion MAJOR SECTION */
 
 /*
-    TODO: Update color palette to fit Dark gray.
     TODO: Beautification needed.
     TODO: Fill 'Lorem Ipsum' with content, replace placeholders.
     TODO: Make site responsive.
@@ -31,7 +31,7 @@ header{
     float: left;
     height: 15%;
     width: 100%;
-    background-color: #1e73be;
+    background-color: #1b0529;
     border-radius: 10px 10px 0 0;
 }
 header.home{
@@ -94,7 +94,7 @@ main{
     height: auto;
     width: 100%;
     flex: 1;
-    background-color: #8da6bf;
+    background-color: #4b1437;
     text-align: justify; /* no IdEa wOt iS dIs */
     text-justify: distribute-all-lines; /* no IdEa wOt iS dIs */
     font-family: 'Merriweather', sans-serif;
@@ -244,7 +244,7 @@ iframe{
 .bottom{
     width: 90%;
     height: 200px;
-    margin: auto;
+    margin: auto auto 15px;
     display: flex;
     justify-content: space-between;
 }
