@@ -19,10 +19,11 @@ body{
 /*#endregion MAJOR SECTION */
 
 /*
-    TODO: Update placeholders!!!!!!
+    TODO: Update color palette to fit Dark gray.
+    TODO: Beautification needed.
+    TODO: Fill 'Lorem Ipsum' with content, replace placeholders.
     TODO: Make site responsive.
-    TODO: Rewrite 'Lorem Ipsum', write real text and real informations.
-    TODO: Update color palette to fit Darkgray.
+
  */
 
 /*#region HEADER SECTION */
@@ -35,6 +36,19 @@ header{
 }
 header.home{
     background: url("img/header_homebg.jpg");
+}
+header.contact{
+    background: url("img/header_contactbg.jpg") 45% 45%;
+}
+header.sport{
+    background: url("img/header_sportbg.png") 65% 0;
+}
+header.concert{
+    background: url("img/header_concertbg.jpg") 0 50%;
+}
+header.recepten{
+    background: url("img/header_receptenbg.jpg") 80% 65%;
+    background-size: 110%;
 }
 nav{
     position: relative;
